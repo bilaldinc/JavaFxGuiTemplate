@@ -1,0 +1,33 @@
+.root {
+    -fx-background-color: rgba(220,220,220,0.51);
+    -fx-background-radius : 10 10 0 0;
+}
+#SignInMenu, #UserMenu, #AdminMenu, #SingUpMenu, #LastRunPane{
+    -fx-background-radius : 10 10 0 0;
+    -fx-border-radius: 10 10 0 0;
+    -fx-border-style: solid;
+    -fx-background-color : rgba(220,220,220,1)
+}
+#username, #password, #SignInB, #SignUpB, #label4, #label3, #label2, #label1,
+#SignUpUsernameLabel, #SignUpPasswordLabel, #SignUpMailLabel, #SignUpCodeLabel,
+#SignUpUserText, #SignUpPasswordText, #SignUpMailText, #SignUpCodeText,
+#SignUpConfirmButton, #SignUpBackButton, #SignUpUsernameText,
+#AdminStopLoggingB, #AdminStartLoggingB, #AdminStopTheSystemB, #AdminStartTheSystemB,
+#AdminMergeLogFilesB, #AdminShowPreviousLogsB, #AdminSynchronizeCUsB,
+#AdminSetParametersB, #AdminSignOutB, #UserStopLoggingB, #UserStartLoggingB, #UserStopTheSystemB,
+#UserStartTheSystemB, #UserSignOutB, #RunIdLabel, #LastRunPaneBack {
+    -fx-background-radius : 10 10 0 0;
+    -fx-border-radius: 10 10 0 0;
+    -fx-border-style: solid;
+    -fx-background-color : rgba(255,255,255,1)
+}
+
+#SignUpB, #SignInB, #SignUpConfirmButton, #SignUpBackButton,
+#AdminStopLoggingB, #AdminStartLoggingB, #AdminStopTheSystemB, #AdminStartTheSystemB,
+#AdminMergeLogFilesB, #AdminShowPreviousLogsB, #AdminSynchronizeCUsB,
+#AdminSetParametersB, #AdminSignOutB, #UserStopLoggingB, #UserStartLoggingB, #UserStopTheSystemB,
+#UserStartTheSystemB, #UserSignOutB, #LastRunPaneBack {
+    -fx-background-color : rgba(230,230,230,1);
+    -fx-border-style: solid;
+    -fx-border-color: rgba(100,100,100,1);
+}

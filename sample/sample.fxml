@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+
+<Pane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Pane fx:id="TopPane" prefHeight="30.0" prefWidth="600.0">
+            <children>
+                <StackPane fx:id="minimize" layoutX="540.0" prefHeight="30.0" prefWidth="30.0" />
+                <StackPane fx:id="exit" layoutX="570.0" prefHeight="30.0" prefWidth="30.0" />
+            </children>
+        </Pane>
+        <Pane fx:id="SignInMenu" layoutY="30.0" prefHeight="370.0" prefWidth="600.0">
+            <children>
+                <Pane fx:id="label1" layoutX="150.0" layoutY="100.0" prefHeight="27.0" prefWidth="140.0">
+                    <children>
+                        <Label layoutX="40.0" layoutY="5.0" text="Username :" />
+                    </children>
+                </Pane>
+                <Pane fx:id="label2" layoutX="150.0" layoutY="150.0" prefHeight="27.0" prefWidth="140.0">
+                    <children>
+                        <Label layoutX="42.0" layoutY="5.0" text="Password :" />
+                    </children>
+                </Pane>
+                <TextField fx:id="username" layoutX="310.0" layoutY="100.0" prefWidth="140.0" />
+                <Button fx:id="SignInB" layoutX="150.0" layoutY="200.0" mnemonicParsing="false" onAction="#SignIn" onMouseEntered="#ButtonEnterEffect" onMouseExited="#ButtonLeaveEffect" prefHeight="27.0" prefWidth="300.0" text="Sign In">
+                    <effect>
+                        <InnerShadow color="#666666" />
+                    </effect>
+                </Button>
+                <Button fx:id="SignUpB" layoutX="150.0" layoutY="240.0" mnemonicParsing="false" onAction="#SignUp" onMouseEntered="#ButtonEnterEffect" onMouseExited="#ButtonLeaveEffect" prefHeight="27.0" prefWidth="300.0" text="Sign Up">
+                    <effect>
+                        <InnerShadow color="#666666" />
+                    </effect></Button>
+                <PasswordField fx:id="password" layoutX="310.0" layoutY="150.0" prefWidth="140.0" />
+            </children></Pane>
+        <Pane fx:id="AdminMenu" layoutY="30.0" prefHeight="370.0" prefWidth="600.0" visible="false">
+            <children>
+                <Button fx:id="AdminMergeLogFilesB" layoutX="430.0" layoutY="270.0" mnemonicParsing="false" onMouseEntered="#ButtonEnterEffect" onMouseExited="#ButtonLeaveEffect" prefWidth="140.0" text="Merge Log Files">
+                    <effect>
+                        <InnerShadow color="#666666" />
+                    </effect>
+                </Button>
+                <Button fx:id="AdminStartLoggingB" layoutX="430.0" layoutY="110.0" mnemonicParsing="false" onMouseEntered="#ButtonEnterEffect" onMouseExited="#ButtonLeaveEffect" prefWidth="140.0" text="Start Logging">
+                    <effect>
+                        <InnerShadow color="#666666" />
+                    </effect>
+                </Button>
+                <Button fx:id="AdminStopLoggingB" layoutX="430.0" layoutY="150.0" mnemonicParsing="false" onMouseEntered="#ButtonEnterEffect" onMouseExited="#ButtonLeaveEffect" prefWidth="140.0" text="Stop Logging">
+                    <effect>
+                        <InnerShadow color="#666666" />
+                    </effect>
+                </Button>
+                <Button fx:id="AdminSetParametersB" layoutX="30.0" layoutY="270.0" mnemonicParsing="false" onMouseEntered="#ButtonEnterEffect" onMouseExited="#ButtonLeaveEffect" prefWidth="140.0" text="Set Parameters">
+                    <effect>
+                        <InnerShadow color="#666666" />
+                    </effect>
+                </Button>
+                <Button fx:id="AdminShowPreviousLogsB" layoutX="430.0" layoutY="310.0" mnemonicParsing="false" onMouseEntered="#ButtonEnterEffect" onMouseExited="#ButtonLeaveEffect" prefWidth="140.0" text="Show Previous Logs">
+                    <effect>
+                        <InnerShadow color="#666666" />
+                    </effect>
+                </Button>
+                <Button fx:id="AdminSignOutB" layoutX="30.0" layoutY="70.0" mnemonicParsing="false" onAction="#SignOutAdmin" onMouseEntered="#ButtonEnterEffect" onMouseExited="#ButtonLeaveEffect" prefWidth="140.0" text="Sign Out">
+                    <effect>
+                        <InnerShadow color="#666666" />
+                    </effect>
+                </Button>
+                <Button fx:id="AdminStartTheSystemB" layoutX="430.0" layoutY="30.0" mnemonicParsing="false" onMouseEntered="#ButtonEnterEffect" onMouseExited="#ButtonLeaveEffect" prefWidth="140.0" text="Start The System">
+                    <effect>
+                        <InnerShadow color="#666666" />
+                    </effect>
+                </Button>
+                <Button fx:id="AdminStopTheSystemB" layoutX="430.0" layoutY="70.0" mnemonicParsing="false" onMouseEntered="#ButtonEnterEffect" onMouseExited="#ButtonLeaveEffect" prefWidth="140.0" text="StopThe System">
+                    <effect>
+                        <InnerShadow color="#666666" />
+                    </effect>
+                </Button>
+                <Button fx:id="AdminSynchronizeCUsB" layoutX="30.0" layoutY="310.0" mnemonicParsing="false" onMouseEntered="#ButtonEnterEffect" onMouseExited="#ButtonLeaveEffect" prefWidth="140.0" text="Synchronize CUs">
+                    <effect>
+                        <InnerShadow color="#666666" />
+                    </effect>
+                </Button>
+                <Pane fx:id="label3" layoutX="30.0" layoutY="30.0" prefHeight="25.0" prefWidth="140.0">
+                    <children>
+                        <Label layoutX="40.0" layoutY="5.0" text="Welcome" textAlignment="CENTER" />
+                    </children>
+                </Pane>
+            </children>
+        </Pane>
+        <Pane fx:id="SingUpMenu" layoutY="30.0" prefHeight="370.0" prefWidth="600.0" visible="false">
+            <children>
+                <Pane fx:id="SignUpUsernameLabel" layoutX="150.0" layoutY="75.0" prefHeight="27.0" prefWidth="140.0">
+                    <children>
+                        <Label layoutX="40.0" layoutY="5.0" text="Username :" />
+                    </children>
+                </Pane>
+                <Pane fx:id="SignUpPasswordLabel" layoutX="150.0" layoutY="125.0" prefHeight="27.0" prefWidth="140.0">
+                    <children>
+                        <Label layoutX="42.0" layoutY="5.0" text="Password :" />
+                    </children>
+                </Pane>
+                <Pane fx:id="SignUpMailLabel" layoutX="150.0" layoutY="175.0" prefHeight="27.0" prefWidth="140.0">
+                    <children>
+                        <Label layoutX="53.0" layoutY="5.0" text="E-Mail" />
+                    </children>
+                </Pane>
+                <Pane fx:id="SignUpCodeLabel" layoutX="150.0" layoutY="225.0" prefHeight="27.0" prefWidth="140.0">
+                    <children>
+                        <Label layoutX="28.0" layoutY="5.0" text="Invitation Code" />
+                    </children>
+                </Pane>
+                <TextField fx:id="SignUpUsernameText" layoutX="310.0" layoutY="75.0" prefWidth="140.0" />
+                <TextField fx:id="SignUpMailText" layoutX="310.0" layoutY="175.0" prefWidth="140.0" />
+                <TextField fx:id="SignUpCodeText" layoutX="310.0" layoutY="225.0" prefWidth="140.0" />
+                <Button fx:id="SignUpConfirmButton" layoutX="150.0" layoutY="275.0" mnemonicParsing="false" onMouseEntered="#ButtonEnterEffect" onMouseExited="#ButtonLeaveEffect" prefWidth="140.0" text="Confirm">
+                    <effect>
+                        <InnerShadow color="#666666" />
+                    </effect>
+                </Button>
+                <PasswordField fx:id="SignUpPasswordText" layoutX="310.0" layoutY="125.0" prefWidth="140.0" />
+                <Button fx:id="SignUpBackButton" layoutX="310.0" layoutY="275.0" mnemonicParsing="false" onAction="#SignUpBack" onMouseEntered="#ButtonEnterEffect" onMouseExited="#ButtonLeaveEffect" prefWidth="140.0" text="Back">
+                    <effect>
+                        <InnerShadow color="#666666" />
+                    </effect>
+                </Button>
+            </children>
+        </Pane>
+    </children>
+</Pane>
